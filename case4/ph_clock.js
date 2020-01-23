@@ -1,11 +1,13 @@
+"use strict";
+
 /*
    New Perspectives on HTML5 and CSS3, 7th Edition
    Tutorial 9
    Case Problem 4
 
    Countdown Clock for Ticket Ordering
-   Author: 
-   Date:  
+   Author: Caleb Brown
+   Date: 1/22/20 
 
    Filename:   ph_clock.js     
 
@@ -17,7 +19,9 @@
 
 
 /* ------------------------------------------------- */
-
+var minsLeft = 0;
+var secsLeft = 15;
+var timeLeft = minsLeft * 60 + secsLeft;
 
 /* The checkTimer() function tests whether there is any time left to make the
    ticket order. If the time left is 0, the stopClock() function is run;
